@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icons{
+   display: flex;
+   gap:1.2rem;
+}
+
+.icons > *{
+    cursor: pointer;
+    transition: all 0.5s linear;
+    color: yellow;
+}
+
+.icons > *:hover{
+    transform: rotate(360deg);
+}
+
+
+.section1{
+    width: 100%;
+}
+
+.section1 , .section2 , section.skills, section.location,section.education, section.sertificate, section.about{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;   
+}
+
+
+
+
+.wrapper h1{
+    padding: 3%;
+}
+
+
+/* SECTION 1 */
+
+.section1{
+    height: 300vh;
+    background-image: url(images/bg-anime3.png);
+}
+
+.section1 audio{
+    margin-bottom: 2rem;
+}
+
+.section1 p{ 
+    font-size: 30pt;
+    font-style:italic;
+    font-weight: 700;
+    text-shadow: 3px 3px 0px rgb(33, 151, 164);
+}
+
+.section1 p span{
+    color:cyan;
+    font-weight: 700;
+    font-size: 40pt;
+}
+
+.curtain {
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+    background-image: linear-gradient( 150deg, black 55%,cyan 20%  , white );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;  
+    /* transition: all 2s linear; */
+    cursor:pointer;
+}
+
+.curtain:hover{
+    
+    background-image: linear-gradient( 150deg, white 55%,cyan 20%  , white );
+}
+
+
+
+.curtain h1 {
+    line-height:1;
+    font-size: 13em;
+    font-weight: 900;
+    background-image: url(images/bg-anime3.png);
+    background-attachment: fixed;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-position: bottom;
+    font-style: italic;
+   
+}
+
+
+/* ================== ABOUT ME */
+section.about .wrapper{
+    background-color: #111;
+    /* opacity: 0.9; */
+   padding: 2rem 1rem;
+   margin: auto;
+    width: 90%;
+    height: 100%;
+    transition: all 0.2s linear;
+}
+
+section.about .wrapper:hover{
+    box-shadow: 20px -7px 0px cyan, -18px 25px 0px #000;
+}
+
+section.about .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+section.about .wrapper h2{
+    font-weight: 400;
+    color:#fff;
+    font-size: 1.2rem;
+}
+
+/* ================== SECTION 2 PROJECT */
+
+.section2, section.education,  section.about, section.location, section.education, section.skills{
+    background-image: url(images/bg-anime4.png);
+    padding-bottom: 2rem;
+
+    
+}
+
+/* .section2 h1, section.skills h1 {
+    padding: 2.5% 5%;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    background-image: linear-gradient(white, cyan, white);
+    background-clip: text;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    font-style: italic;
+    color: transparent;
+    font-weight: 800;
+    position: relative;
+    
+} */
+
+
+/* ============ H1 */
+.section2 h1, section.skills h1, section.location h1, section.education h1 , section.sertificate h1, section.footer h1, section.about h1{
+    padding: 2.5% 5%;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    padding-top: 5rem;
+    font-style: italic;
+    color: #222;
+    font-weight: 800;
+    position: relative;
+    text-shadow: 6px 3px 0px cyan;
+}
+
+
+
+
+/* .section2 h1::after, section.skills h1::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 5px;
+    background-image: linear-gradient(to right,black, white, black );
+    background-size:200% 100%; /* Memperbesar ukuran background untuk animasi */
+    /* background-attachment: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 40px 1px; /* Menyesuaikan bentuk sudut */
+    /* animation: gradienGerak 3s ease-in-out infinite;
+} */ 
+
+@keyframes gradienGerak {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.section2 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    opacity: 1; /* Pastikan elemen di dalam tetap penuh */
+    text-align: center;
+}
+
+.card {
+    margin: 3%;
+    flex-direction: row;
+    backdrop-filter: blur(5px);
+    /* border-radius: 20px; */
+    border: 5px solid transparent;
+    background-color: #111;
+    
+    opacity: 1; /* Pastikan elemen di dalam tetap penuh */
+    transition: all 0.2s ease-in-out;
+     text-align: center;
+    object-fit: contain;
+}
+
+
+.card:hover{
+    /* transform: scale(1.02); */
+    transform: translateY(-1rem);
+    /* box-shadow: 0px 0px 20px rgba(245, 246, 246, 0.7), 0px 0px 10px cyan; */
+    /* box-shadow: 10px 3px 0px cyan; */
+    box-shadow: 16px 20px 0px #000;
+
+}
+
+
+.card img{
+    width: 500px;
+    /* border-radius: 20px; */
+    /* backdrop-filter: blur(5px); */
+}
+
+.card p{
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 600;
+    margin:1% auto;
+    /* color:#333; */
+    color:white;
+    font-weight: 800;
+}
+
+
+/* ================== tech */
+section.skills, section.location, section.sertificate, section.education{
+    background-image: url(images/bg-anime4.png);
+    /* height: 100%; */
+}
+
+.tech, section.education .desc{
+    /* background-color: #111; */
+    background-color: #111;
+    /* opacity: 0.9; */
+    margin:auto;
+    width: 90%;
+    height: 100%;
+    transition: all 0.2s linear;
+}
+
+.tech:hover{
+     box-shadow: 20px -10px 0px cyan, -18px 25px 0px #000;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    padding:5%;
+    gap:4rem;
+}
+
+.tech img{
+    filter: grayscale(100%);
+    transition: all 0.2s linear;
+    width: 100px;
+    height: 100px;
+}
+
+.tech img:hover{
+    filter:grayscale(0);
+    cursor: pointer;
+    transform: scale(1.2) rotate(360deg);
+
+}
+
+/* ================== EDUCATION */
+section.education .desc:hover{
+    box-shadow: 20px -25px 0px #000 , -25px 20px 0px  cyan;
+}
+
+.education {
+    color: #fff;
+}
+
+.education .desc ul{
+    font-family: "Montserrat", sans-serif;
+    color: #eee;
+    padding:4rem;
+    /* background-color: yellow; */
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-style: italic;
+
+}
+
+.education .wrapper{
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+
+
+.education .desc ul li{
+    margin-bottom: 3rem;
+}
+
+.education .education-container{
+    border-left: 3px solid cyan;
+}
+
+.education .education-container > *{
+    margin-left: 2rem ;
+}
+
+/* ================== SERTIFICATE */
+section.sertificate .wrapper .card-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+section.sertificate .wrapper .card-group .card{
+    cursor: pointer;
+}
+
+/* ================== LOCATION */
+section.location .wrapper{
+    background-color: #222; 
+    margin: auto;
+    padding:1rem;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+
+section.location .wrapper:hover{
+    box-shadow: 20px -10px 0px cyan, -18px 25px 0px #000;
+}
+
+iframe{
+    border: 5px solid black;
+    width: 100%;
+    height: 500px;
+}
+
+.icon{
+    font-size: 30px;
+}
+
+.form{
+    text-align: center;
+    
+}
+
+.form .form-group{
+    display: flex;
+    text-align: center;
+    margin-top:1rem;
+    justify-content: space-between;
+}
+
+.form input{
+    width: 100%;
+    padding:0.4rem 2rem;
+    font-size: 2rem;
+    
+}
+
+button{
+    background-color: #000;
+    color:white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding:0.75rem 2rem;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: 4px solid black;
+    margin-top: 1rem;
+    
+}
+button:hover{
+    box-shadow: 7px 7px 0px black;
+    background: white;
+    color:black;
+}
+
+/* ================== EDUCATION */
+section.education{
+    padding-bottom: 10rem;
+}
+
+section.education .wrapper{
+    background-color: #111;
+    /* opacity: 0.9; */
+   padding: 2rem 1rem;
+   margin: auto;
+    width: 90%;
+    height: 100%;
+    transition: all 0.2s linear;
+}
+
+.education .wrapper:hover{
+    box-shadow: 20px -7px 0px cyan, -18px 25px 0px #000;
+}
+
+.education-container{
+    font-size: 1.3rem;
+}
+
+.education-container .institution{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.education-container .time-period{
+    background-color: cyan;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 20px 5px 20px 5px ;
+    font-weight: 900;
+    color:#111
+}
+
+.education-container .field{
+    font-style: italic;
+    font-size: 1.2rem;
+    padding:0.5rem 0;
+}
+
+
+.education-container ul{
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* ================== FOOTER */
+.footer-icons{
+   display: flex;
+   gap:2rem;
+
+}
+
+section.footer, .under-footer{
+    background-image: url(images/bg-anime4.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;   
+    
+}
+
+section.footer .footer-container {
+     /* background-color: #111; */
+     background-image: linear-gradient( 150deg, #111 56%,cyan 40%  , white );
+     /* opacity: 0.9; */
+     width: 100%;
+     height: 65vh;
+     transition: all 0.2s linear;
+     align-items: center;
+     text-align: center;
+     display: flex;
+     justify-content: space-evenly;
+     position: relative;
+
+     
+}
+
+section.footer .footer-container h2, .footer-container p{
+    color: transparent;
+    background-image: url(images/bg-anime3.png);
+    background-clip: text;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 2rem;
+    z-index: 5;
+}
+
+
+section.footer .footer-container .left{
+   line-height: 4rem;
+   width: 55%;
+
+}
+
+section.footer .footer-container .right{
+
+    
+}
+
+section.footer .footer-container .right{
+    display: flex;
+    gap: 50%;
+}
+
+section.footer .footer-container .right .links ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* HORIZONTAL */
+.cici{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+    margin: auto;
+}
+
+/* under footer */
+.under-footer .wrapper{
+    background-color: #111;
+    width: 100%;
+    padding:2rem 0;
+}
+
+
+
+.under-footer h4{
+    color: transparent;
+    background-image: url(images/bg-anime3.png);
+    background-clip: text;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+#link{
+    color:#000;
+    margin-bottom: 2rem;
+    background-color: yellow;
+}
+
+
+
+
+
+
+/* ================== RESPONSIVE */
+@media screen and (max-width:1700px){
+    .curtain h1{
+        font-size: 10rem;
+    }
+
+    .curtain{
+        line-height: 5rem;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .curtain h1{
+        font-size: 8rem;
+    }
+
+    .card img{
+        width: 500px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .curtain h1{
+        font-size:7rem;
+    }
+
+    .card img{
+        width: 400px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .curtain h1{
+        font-size:6rem;
+    }
+
+    .card img{
+        width: 400px;
+        border-radius: 20px;
+    }
+}
+
+
+@media screen and (max-width:760px){
+    .section1 p{
+        font-size:2rem;
+    }
+
+    .curtain h1{
+        font-size:4rem;
+        line-height: 6rem;
+    }
+
+    .section2 h1, section.skills h1, section.location h1, section.education h1 , section.sertificate h1, section.footer h1, section.about h1{
+        font-size: 3rem;
+    }
+
+    /* education */
+    section.education ul li{
+        font-size: 1.45rem;
+        
+    }
+
+    .card img{
+        width: 400px;
+        border-radius: 20px;
+    }
+
+    section.sertificate .wrapper .card-group{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section.footer .footer-container {
+        /* background-color: #111; */
+        background-image: linear-gradient( 150deg, #111 56%,cyan 40%  , white );
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:420px){
+    .section1 p{
+        font-size:2rem;
+        color:cyan;
+    }
+
+    .curtain h1{
+        font-size:3rem;
+    }
+
+    .section2 h1, section.skills h1, section.education h1,section.sertificate h1,section.location h1, section.footer h1{
+        font-size:2rem;
+    }
+
+    /* tech stack */
+    section.skills img{
+        width: 50px;
+        object-fit: contain;
+    }
+
+    /* education */
+    section.education ul li{
+        font-size: 1.45rem;
+        
+    }
+
+    .card img{
+        width: 300px;
+        border-radius: 20px;
+    }
+    
+    .card{
+        margin-bottom: 2rem;
+    }
+}
